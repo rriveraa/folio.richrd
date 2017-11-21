@@ -1,0 +1,609 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #63d9e8;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #63d9e8;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/* #Global
+================================================== */
+
+body {
+	background: #fff;
+}
+
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; 
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 300;
+	color: #b2bec4;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+h5 {
+	font-family: 'Lato', Arial, sans-serif;
+	font-weight: 700;
+	color: #f1c0a9;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+
+/* #Border
+================================================== */
+#top, #bottom, #left, #right {
+	background: rgba(217, 248, 253, 0.8);
+	position: fixed;
+	z-index:999;
+}
+	
+#left, #right {
+	top: 0; bottom: 0;
+	width: 30px;
+}
+
+	#left { left: 0; }
+	#right { right: 0; }
+		
+#top, #bottom {
+	left: 0; right: 0;
+	height: 30px;
+}
+		
+	#top { top: 0; }
+	#bottom { bottom: 0; }
+		
+
+
+/* #Header
+================================================== */
+header {
+	position:relative;
+	width: 100%;
+	height: auto;
+	min-height: 250px;
+	float: left;
+	background-color: #FFF;
+	display:block;
+	z-index:999;
+}
+
+header #header-container {
+	width: 100%;
+	height: auto;
+}
+
+header #header-container h1 {
+	display: block;
+	width: 86px;
+	height: 86px;
+	margin: 75px auto 0;
+	padding-bottom: 25px;
+}
+
+header #header-container h1 a {
+	display: block;
+	width: 86px;
+	height: 86px;
+	text-indent: -999em;
+	position: relative;
+	background: url(../img/logo.png);
+
+}
+
+header #header-container h1 a:after {
+	content: " ";
+	display: block;
+	top: 0;
+	left: 0;
+	width: 86px;
+	height: 86px;
+	position: absolute;
+	opacity: 0;
+	background: url(../img/logo.png);
+	background-position: 0 -86px;
+	transition: opacity 0.5s ;
+	-webkit-transition: opacity 0.5s ease-in-out ;
+	-moz-transition: opacity 0.5s ease-in-out ;
+	-ms-transition: opacity 0.5s ease-in-out ;
+	-o-transition: opacity 0.5s ease-in-out ;
+}
+
+header #header-container h1 a:hover:after {
+	opacity: 1;
+}
+
+
+header #header-container h2 {
+	display: block;
+	color: #64747d;
+	font-size: 1.8em;
+	line-height: 20px;
+	text-align: center;
+}
+
+.bg-main {
+	position:absolute;
+	background-color: white; 
+	width:100%;
+	height:auto;
+	z-index: 0; 
+	top:260px;
+}
+
+
+/* #Titles
+================================================= */
+
+#btn-center {
+	margin: 10px 0 24px 0;
+}
+
+
+
+#title {
+	padding: 100px 0 20px;
+	border-bottom: 1px solid #e5ebeb;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+
+
+/* #Mocks
+================================================= */
+
+#port-img {
+	position:relative; 
+	margin:100px 0 0;
+}
+
+#port-border {
+	border-bottom: 2px solid #f1f1f1; 
+	padding-bottom: 100px;
+}
+
+#portfolio-img {
+	position:relative;
+	
+}
+
+
+
+
+/* Social
+================================================= */
+.social {
+ 	margin: 0 auto;
+}
+
+.social h2 {
+	color: #f1c0a9;
+	margin: 80px 0 20px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.social ul {
+	height: 32px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.social ul li {
+	width: 80px;
+	display: inline-block;
+}
+
+.dribbble a {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url("../img/db.png") no-repeat top center;
+	-webkit-transition: background-image 0.6s ease-in-out;
+	-moz-transition: background-image 0.6s ease-in-out;
+	-ms-transition: background-image 0.6s ease-in-out;
+	-o-transition: background-image 0.6s ease-in-out;
+	transition: background-image 0.6s ease-in-out;
+	
+}
+
+.dribbble a:hover {
+	background: url("../img/db-hover.png") no-repeat top center;
+}
+
+.linkedin a {
+	display: block;
+	background: url("../img/in.png") no-repeat top center;
+	height: 32px;
+	-webkit-transition: background-image 0.6s ease-in-out;
+	-moz-transition: background-image 0.6s ease-in-out;
+	-ms-transition: background-image 0.6s ease-in-out;
+	-o-transition: background-image 0.6s ease-in-out;
+	transition: background-image 0.6s ease-in-out;
+	
+}
+
+.linkedin a:hover {
+	background: url("../img/in-hover.png") no-repeat top center;
+}
+
+.twitter a {
+	display: block;
+	background: url("../img/twitter.png") no-repeat top center;
+	height: 32px;
+	-webkit-transition: background-image 0.6s ease-in-out;
+	-moz-transition: background-image 0.6s ease-in-out;
+	-ms-transition: background-image 0.6s ease-in-out;
+	-o-transition: background-image 0.6s ease-in-out;
+	transition: background-image 0.6s ease-in-out;
+	
+}
+
+.twitter a:hover {
+	background: url("../img/twitter-hover.png") no-repeat top center;
+}
+
+
+
+/* Footer
+================================================= */
+footer {
+	position:relative;	margin: 0 auto;
+	padding-top:70px;
+	padding-bottom: 70px;
+	font-family:"Lato",Arial,serif;
+	font-weight: 100;
+	color:#c1c1c1;
+	font-size: .8em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-align: center;
+}
+
+
+
+
+
+
+/* Animation Full Page
+================================================= */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+ 
+.fade-in.one {
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay:1.2s;
+	animation-delay: 1.2s;
+}
+ 
+.fade-in.three {
+	-webkit-animation-delay: 1.6s;
+	-moz-animation-delay: 1.6s;
+	animation-delay: 1.6s;
+}
+ 
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
