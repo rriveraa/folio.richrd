@@ -110,7 +110,7 @@ body {
 
 img.scale-with-grid {
 	max-width: 100%;
-	height: auto; 
+	height: auto;
 }
 
 h1, h2, h3, h4 {
@@ -121,10 +121,11 @@ h1, h2, h3, h4 {
 }
 
 h5 {
+  font-size: 1.6rem !important;
 	font-family: 'Lato', Arial, sans-serif;
-	font-weight: 700;
+	font-weight: 700 !important;
 	color: #f1c0a9;
-	letter-spacing: 2px;
+	letter-spacing: 2px !important;
 	text-transform: uppercase;
 	margin: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -139,7 +140,7 @@ h5 {
 	position: fixed;
 	z-index:999;
 }
-	
+
 #left, #right {
 	top: 0; bottom: 0;
 	width: 30px;
@@ -147,15 +148,15 @@ h5 {
 
 	#left { left: 0; }
 	#right { right: 0; }
-		
+
 #top, #bottom {
 	left: 0; right: 0;
 	height: 30px;
 }
-		
+
 	#top { top: 0; }
 	#bottom { bottom: 0; }
-		
+
 
 
 /* #Header
@@ -221,16 +222,17 @@ header #header-container h2 {
 	display: block;
 	color: #64747d;
 	font-size: 1.8em;
+  letter-spacing: normal !important;
 	line-height: 20px;
 	text-align: center;
 }
 
 .bg-main {
 	position:absolute;
-	background-color: white; 
+	background-color: white;
 	width:100%;
 	height:auto;
-	z-index: 0; 
+	z-index: 0;
 	top:260px;
 }
 
@@ -245,7 +247,7 @@ header #header-container h2 {
 
 
 #title {
-	padding: 100px 0 20px;
+	padding: 70px 0 20px;
 	border-bottom: 1px solid #e5ebeb;
 	text-align: center;
 	margin: 0 auto;
@@ -259,18 +261,18 @@ header #header-container h2 {
 ================================================= */
 
 #port-img {
-	position:relative; 
+	position:relative;
 	margin:100px 0 0;
 }
 
 #port-border {
-	border-bottom: 2px solid #f1f1f1; 
+	border-bottom: 2px solid #f1f1f1;
 	padding-bottom: 100px;
 }
 
 #portfolio-img {
 	position:relative;
-	
+
 }
 
 
@@ -284,7 +286,7 @@ header #header-container h2 {
 
 .social h2 {
 	color: #f1c0a9;
-	margin: 80px 0 20px;
+	margin: 50px 0 20px;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	text-align: center;
@@ -295,7 +297,7 @@ header #header-container h2 {
 .social ul {
 	height: 32px;
 	list-style: none;
-	margin: 0 auto;
+	margin: 30px auto;
 	padding: 0;
 	text-align: center;
 }
@@ -315,7 +317,7 @@ header #header-container h2 {
 	-ms-transition: background-image 0.6s ease-in-out;
 	-o-transition: background-image 0.6s ease-in-out;
 	transition: background-image 0.6s ease-in-out;
-	
+
 }
 
 .dribbble a:hover {
@@ -331,7 +333,7 @@ header #header-container h2 {
 	-ms-transition: background-image 0.6s ease-in-out;
 	-o-transition: background-image 0.6s ease-in-out;
 	transition: background-image 0.6s ease-in-out;
-	
+
 }
 
 .linkedin a:hover {
@@ -347,7 +349,7 @@ header #header-container h2 {
 	-ms-transition: background-image 0.6s ease-in-out;
 	-o-transition: background-image 0.6s ease-in-out;
 	transition: background-image 0.6s ease-in-out;
-	
+
 }
 
 .twitter a:hover {
@@ -358,9 +360,16 @@ header #header-container h2 {
 
 /* Footer
 ================================================= */
+
+.bottom p {
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
 footer {
 	position:relative;	margin: 0 auto;
-	padding-top:70px;
+	padding-top:200px;
 	padding-bottom: 70px;
 	font-family:"Lato",Arial,serif;
 	font-weight: 100;
@@ -380,40 +389,40 @@ footer {
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- 
+
 .fade-in {
 	opacity:0;  /* make things invisible upon start */
 	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 	-moz-animation:fadeIn ease-in 1;
 	animation:fadeIn ease-in 1;
-	
+
 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
-	
+
 	-webkit-animation-duration:1s;
 	-moz-animation-duration:1s;
 	animation-duration:1s;
 }
- 
+
 .fade-in.one {
 	-webkit-animation-delay: 0.7s;
 	-moz-animation-delay: 0.7s;
 	animation-delay: 0.7s;
 }
- 
+
 .fade-in.two {
 	-webkit-animation-delay: 1.2s;
 	-moz-animation-delay:1.2s;
 	animation-delay: 1.2s;
 }
- 
+
 .fade-in.three {
 	-webkit-animation-delay: 1.6s;
 	-moz-animation-delay: 1.6s;
 	animation-delay: 1.6s;
 }
- 
+
 
 
 
